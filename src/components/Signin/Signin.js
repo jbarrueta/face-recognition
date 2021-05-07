@@ -18,7 +18,7 @@ class Signin extends Component {
   };
 
   onSubmitSignIn = () => {
-    fetch("/signin", {
+    fetch("/api/signin", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

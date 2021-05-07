@@ -23,7 +23,7 @@ class Register extends Component {
   };
 
   onSubmitSignIn = () => {
-    fetch("/register", {
+    fetch("/api/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

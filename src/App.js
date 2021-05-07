@@ -182,7 +182,7 @@ class App extends Component {
       .then((response) => {
         if (response) {
           console.log(this.state.user.id);
-          fetch("/image", {
+          fetch("/api/image", {
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
